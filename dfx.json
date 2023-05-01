@@ -1,19 +1,12 @@
 {
   "canisters": {
-    "elplabsfrontend_backend": {
-      "main": "src/elplabsfrontend_backend/main.mo",
-      "type": "motoko"
-    },
-    "elplabsfrontend_frontend": {
-      "dependencies": [
-        "elplabsfrontend_backend"
-      ],
+    "elp_frontend": {
       "frontend": {
-        "entrypoint": "src/elplabsfrontend_frontend/src/index.html"
+        "entrypoint": "elp_frontend/src/index.html"
       },
       "source": [
-        "src/elplabsfrontend_frontend/assets",
-        "dist/elplabsfrontend_frontend/"
+        "elp_frontend/assets",
+        "dist/elp_frontend/"
       ],
       "type": "assets"
     }
@@ -22,6 +15,18 @@
     "build": {
       "args": "",
       "packtool": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8080",
+      "canister_http": {
+        "enabled": true
+      },
+      "replica": {
+        "subnet_type": "system"
+      },
+      "type": "ephemeral"
     }
   },
   "version": 1

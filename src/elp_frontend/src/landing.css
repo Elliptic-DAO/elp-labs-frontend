@@ -1,0 +1,50 @@
+.button-landing {
+  background: rgb(13, 124, 255);
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 1em;
+}
+
+@keyframes floatckbtc {
+  0% {
+    transform: translateY(15px) rotate(-10deg);
+  }
+
+  50% {
+    transform: translateY(-5px) rotate(1deg);
+  }
+
+  100% {
+    transform: translateY(15px) rotate(-10deg);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(30px) rotate(30deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
